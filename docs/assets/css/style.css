@@ -1,13 +1,28 @@
+/*Selector universal, selecciona todos los elementos y les alica el formato indicado
+box-sizing  - Establece cómo se calcula el ancho y alto total de un elemento.
+              border-box  le dice al navegador que tenga en cuenta cualquier borde y relleno en los valores que especifique para el ancho y la altura de un elemento.
+padding     - Establece el espacio de relleno requerido por todos los lados de un elemento.
+margin      - Establece el margen a todos los lados del elemento a 0px
+*/
 * {
     box-sizing: border-box;
     padding: 0;
     margin: 0;
 }
 
+/*Selector de elemento simple que aplicara el formato definido al body
+background-color- Establece el color de fondo para el elemento. 
+*/
 body {
     background-color: #d9dcd6;
 }
 
+/*Selector de clase simple que aplicara el formato especificado a los elementos que se les defina dicha clase
+padding         - Establece el espacio de relleno requerido por todos los lados de un elemento.
+font-family     - Lista de fuentes que de encontrarse disponibles aplicara al elemento.
+background-color- Establece el color de fondo para el elemento.
+color           - define el color de la fuente dentro del elemento.
+*/
 .header {
     padding: 20px;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
@@ -15,15 +30,29 @@ body {
     color: #ffffff;
 }
 
+/*Selector descendente que aplica a todos los elementos h1 dentro del header el formato especificado
+display     - Especifica si un elemento es tratado como block or inline element y el diseño usado por sus hijos, como flow layout(Diseño de Flujo), grid(Cuadricula) o flex(Flexible).
+font-size   - establece el tamaño de la fuente a 48 pixeles
+*/
 .header h1 {
     display: inline-block;
     font-size: 48px;
 }
 
+/*Selector de clase descendiente que especifica el formato que se aplicara a los elementos con la clase seo
+color           - define el color de la fuente dentro del elemento.
+*/
 .header h1 .seo {
     color: #d9dcd6;
 }
 
+/*Selector de clase descendiente que especifica el formato que se aplicara a los elementos "div"
+padding-top     - Establece la altura del área de relleno en la parte superior de un elemento, en este caso 15 pixeles.
+margin-right    - Establece el margen derecho del elemento a 20px
+float           - Ubica un elemento al lado izquierdo o derecho de su contenedor, en este caso a la derecha.
+font-family     - Lista de fuentes que de encontrarse disponibles aplicara al elemento.
+font-size       - establece el tamaño de la fuente a 20 pixeles
+*/
 .header div {
     padding-top: 15px;
     margin-right: 20px;
@@ -32,31 +61,60 @@ body {
     font-size: 20px;
 }
 
+/*Selector de clase descendiente que especifica el formato que se aplicara a los elementos "ul"
+list-style-type - Establece el marcador (como un disco, carácter o estilo de contador personalizado) de un elemento de lista
+                  En este caso ninguno.
+*/
 .header div ul {
     list-style-type: none;
 }
 
+/*Selector de clase descendiente que especifica el formato que se aplicara a los elementos "li"
+display     - Especifica si un elemento es tratado como block or inline element y el diseño usado por sus hijos, como flow layout(Diseño de Flujo), grid(Cuadricula) o flex(Flexible).
+margin-left - Establece el área de margen en el lado izquierdo de un elemento. Un valor positivo lo ubica más lejos de sus vecinos, mientras que un valor negativo lo ubica más cerca
+*/
 .header div ul li {
     display: inline-block;
-    margin-left: 25px;
-    
+    margin-left: 25px;    
 }
 
 /*Se agrega accesibilidad a los links del menu principal*/
+/*selector descendiente de pseudo clase para el elemento li, para que al pasar el mouse sobre el elemento aplique el formato definido
+text-decoration - Establece el tipo de decoración que se utiliza en el texto de un elemento, como un subrayado o una superposición.
+                  en este caso "subrayado"
+cursor          - Establece el cursor del mouse, si lo hay, para mostrar cuando el puntero del mouse está sobre un elemento. en este caso 
+                  En este caso "algo que se puede agarrar"
+*/
 .header div ul li :hover{
     text-decoration: underline;
     cursor: grab;
 }
 
+/*Selector de elemento simple que especifica el formato que se aplicara a los elementos "a"
+color           - define el color de la fuente dentro del elemento.
+text-decoration - Establece el tipo de decoración que se utiliza en el texto de un elemento, como un subrayado o una superposición.
+                  en este caso "ninguno"
+*/
 a {
     color: #ffffff;
     text-decoration: none;
 }
 
+/*Selector de elemento simple que especifica el formato que se aplicara a los elementos "p"
+font-size       - establece el tamaño de la fuente a 16 pixeles
+*/
 p {
     font-size: 16px;
 }
 
+/*Selector de clase simple que especifica el formato que se aplicara a los elementos que contengan dicha clase
+height              - Define la altura en 800 pixeles
+width               - Especifica la anchura del area de contenido de un elemento.
+margin-bottom       - Establece el espacio requerido en la parte inferior del elemento a 25 pixeles
+background-image    - Establece una o más imágenes de fondo en un elemento
+background-size     - Establece el tamaño de la imagen de fondo del elemento, Cover =Escala la imagen (manteniendo su proporción) al tamaño más pequeño posible para llenar el contenedor
+background-position - Establece la posición inicial de cada imagen de fondo, en este caso al centro
+*/
 .hero {
     height: 800px;
     width: 100%;
@@ -66,22 +124,45 @@ p {
     background-position: center;
 }
 
+/*Selector de clase simple que especifica el formato que se aplicara a los elementos que contengan dicha clase
+float           - Ubica un elemento al lado izquierdo o derecho de su contenedor, en este caso a la izquierda.
+margin-right    - Establece el área de margen en el lado derecho de un elemento. Un valor positivo lo ubica más lejos de sus vecinos, mientras que un valor negativo lo ubica más cerca.margin-right
+*/
 .float-left {
     float: left;
     margin-right: 25px;
 }
 
+/*Selector de clase simple que especifica el formato que se aplicara a los elementos que contengan dicha clase
+float       - Ubica un elemento al lado izquierdo o derecho de su contenedor, en este caso a la derecha.
+margin-left - Establece el área de margen en el lado izquierdo de un elemento. Un valor positivo lo ubica más lejos de sus vecinos, mientras que un valor negativo lo ubica más cerca
+*/
 .float-right {
     float: right;
     margin-left: 25px;
 }
 
+/*Selector de clase simple que especifica el formato que se aplicara a los elementos que contengan dicha clase
+width       - Especifica la anchura del area de contenido de un elemento.
+display     - Especifica si un elemento es tratado como block or inline element y el diseño usado por sus hijos, como flow layout(Diseño de Flujo), grid(Cuadricula) o flex(Flexible).
+margin-left - Establece el área de margen en el lado izquierdo de un elemento. Un valor positivo lo ubica más lejos de sus vecinos, mientras que un valor negativo lo ubica más cerca
+*/
 .content {
     width: 75%;
     display: inline-block;
     margin-left: 20px;
 }
 
+/*Selector de clase que especifica el formato que se aplicara a los elementos que contengan dicha clase
+margin-right    - Establece el margen derecho del elemento a 20px
+padding         - Establece el espacio de relleno requerido por todos los lados de un elemento.
+clear: both     - Especifica si un elemento puede estar al lado de elementos flotantes que lo preceden o si debe ser movido debajo de ellos
+float           - Ubica un elemento al lado izquierdo o derecho de su contenedor, en este caso a la derecha.
+width           - Especifica la anchura del area de contenido de un elemento.
+height          - Define la altura en porcentaje al 100%
+font-family     - Lista de fuentes que de encontrarse disponibles aplicara al elemento.
+background-color- Establece el color de fondo para el elemento.
+*/
 .benefits {
     margin-right: 20px;
     padding: 20px;
@@ -93,55 +174,44 @@ p {
     background-color: #2589bd;
 }
 
-.benefit-lead {
+/*Selector descendente para especificar el formato al elemento div dentro de la clase .benefits  
+margin-bottom   - establece el espacio requerido en la parte inferior del elemento a 32 pixeles
+color           - define el color de la fuente dentro del elemento.
+*/
+.benefits div {
     margin-bottom: 32px;
     color: #ffffff;
 }
 
-.benefit-brand {
-    margin-bottom: 32px;
-    color: #ffffff;
-}
-
-.benefit-cost {
-    margin-bottom: 32px;
-    color: #ffffff;
-}
-
-.benefit-lead h3 {
+/*Selector simple para aplicar el formato especificado al elemento h3
+margin-bottom   - establece el espacio requerido en la parte inferior del elemento a 10 pixeles
+text-align      - establece la alineación del texto al centro del elemento 
+*/
+h3 {
     margin-bottom: 10px;
     text-align: center;
 }
 
-.benefit-brand h3 {
-    margin-bottom: 10px;
-    text-align: center;
-}
-
-.benefit-cost h3 {
-    margin-bottom: 10px;
-    text-align: center;
-}
-
-.benefit-lead img {
+/*Selector descendiente que aplica el formato al elemento img dentro los div's dentro de la clase benefits
+display     - Especifica si un elemento es tratado como block or inline element y el diseño usado por sus hijos, como flow layout(Diseño de Flujo), grid(Cuadricula) o flex(Flexible).
+margin      - Establece el margen para los cuatro lados. Es una abreviación para evitar tener que establecer cada lado por separado con las otras propiedades de margen: margin-top (en-US), margin-right, margin-bottom y margin-left (en-US).
+max-width   - especifica la anchura maxima del area de contenido de un elemento
+*/
+.benefits div img {
     display: block;
     margin: 10px auto;
     max-width: 150px;
 }
 
-.benefit-brand img {
-    display: block;
-    margin: 10px auto;
-    max-width: 150px;
-}
-
-.benefit-cost img {
-    display: block;
-    margin: 10px auto;
-    max-width: 150px;
-}
-
-.search-engine-optimization {
+/*Selector descendiente que aplica el formato al elemento div dentro de la clase content 
+margin-bottom   - establece el espacio requerido en la parte inferior del elemento a 20 px
+padding         - establece el espacio de relleno requerido por todos los lados de un elemento.
+height          - define la altura en 300 pixeles
+font-family     - Lista de fuentes que de encontrarse disponibles aplicara al elemento.
+background-color- establece el color de fondo para el elemento.
+color           - define el color de la fuente dentro del elemento.
+*/
+.content div {
     margin-bottom: 20px;
     padding: 50px;
     height: 300px;
@@ -150,51 +220,27 @@ p {
     color: #ffffff;
 }
 
-.online-reputation-management {
-    margin-bottom: 20px;
-    padding: 50px;
-    height: 300px;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    background-color: #0072bb;
-    color: #ffffff;
-}
-
-.social-media-marketing {
-    margin-bottom: 20px;
-    padding: 50px;
-    height: 300px;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    background-color: #0072bb;
-    color: #ffffff;
-}
-
-.search-engine-optimization img {
+/*Selector descendente que define el formato a aplicar a los elementos img dentro de div dentro de la clase content
+max-height  - -Establece altura máxima del elemento img en 200 pixeles*/
+.content div img{
     max-height: 200px;
 }
 
-.online-reputation-management img {
-    max-height: 200px;
-}
-
-.social-media-marketing img {
-    max-height: 200px;
-}
-
-.search-engine-optimization h2 {
+/*Selector descendente que aplica el formato definido al elemento h2
+margin-bottom   - establece el espacio requerido en la parte inferior del elemento
+font-size       - establece el tamaño de la fuente a 36 pixeles
+*/
+.content div h2{
     margin-bottom: 20px;
     font-size: 36px;
 }
 
-.online-reputation-management h2 {
-    margin-bottom: 20px;
-    font-size: 36px;
-}
-
-.social-media-marketing h2 {
-    margin-bottom: 20px;
-    font-size: 36px;
-}
-
+/*Selector simple que aplica el formato definido al pie de la pagina 
+padding     - establece el espacio de relleno requerido por todos los lados de un elemento de 30 pixeles
+clear: both - especifica si un elemento puede estar al lado de elementos flotantes que lo preceden o si debe ser movido debajo de ellos
+font-family - Proporciona una lista de fuentes que de estar disponible aplicara.
+text-align  - especifica el alineado vertical de un elemento en línea o una celda de una tabla;
+*/
 .footer {
     padding: 30px;
     clear: both;
@@ -202,6 +248,9 @@ p {
     text-align: center;
 }
 
+/*Selector descendiente que define del elemento h2 dentro de footer.
+font-size   - establece la fuente en 20 pixeles
+*/
 .footer h2 {
     font-size: 20px;
 }
