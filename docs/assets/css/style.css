@@ -39,6 +39,13 @@ body {
 .header div ul li {
     display: inline-block;
     margin-left: 25px;
+    
+}
+
+/*Se agrega accesibilidad a los links del menu principal*/
+.header div ul li :hover{
+    text-decoration: underline;
+    cursor: grab;
 }
 
 a {
