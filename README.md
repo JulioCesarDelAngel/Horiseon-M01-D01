@@ -1,6 +1,7 @@
 ![](https://github.com/JulioCesarDelAngel/Horiseon-M01-D01/blob/main/docs/assets/images/banner_horiseon.png)
 
 #[Horiseon](https://juliocesardelangel.github.io/Horiseon-M01-D01/ "Horiseon - Marketing digital")
+
 Horiseon empresa de marketing digital con sede la ciudad de Guadalajara, Jalisco México.
 
 Este proyecto busca proporcionar una plantilla gratuita simple y funcional para el inicio de su proyecto de página web.
