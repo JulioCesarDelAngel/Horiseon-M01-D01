@@ -6,6 +6,23 @@ Horiseon empresa de marketing digital con sede la ciudad de Guadalajara, Jalisco
 Este proyecto busca proporcionar una plantilla gratuita simple y funcional para el inicio de su proyecto de página web.
 
 
+# Estilos de contenido
+Los estidos de contenido estan encapsulados en style.css:
+```css
+.content div {
+    margin-bottom: 20px;
+    padding: 50px;
+    height: 300px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color: #0072bb;
+    color: #ffffff;
+}
+```
+Puede cambiar la apariencia modificando los estilos siguiendo las directrices.
+
+¡Feliz codificación!.
+
+
 ## Estilo de codificación
 Buscamos mantener una página web que cumpla con estándares de accesibilidad cumpliendo lo siguiente:
 
