@@ -14,7 +14,7 @@ Buscamos mantener una página web que cumpla con estándares de accesibilidad cu
 - Utilizando y manteniendo selectores y propiedades CSS consolidados y organizados.
 
 ## Contribuyendo
--  [Cómo contribuir](https://github.com/JulioCesarDelAngel/Horiseon-M01-D01/blob/main/CONTRIBUTING.md "Cómo contribuir")
+-  [Cómo contribuir](https://github.com/JulioCesarDelAngel/Horiseon-M01-D01/CONTRIBUTING.md "Cómo contribuir")
 
 ## Informe de errores
 Usamos  [GitHub Issues](https://github.com/JulioCesarDelAngel/Horiseon-M01-D01/issues "Informe de errores") para realizar un seguimiento de los problemas, ayudenos a mejorar envie su informe de errores.
